@@ -1,0 +1,22 @@
+/* Main footer area */
+footer {
+  margin-top: 1em;
+}
+
+section.main-footer {
+  color: black;
+}
+
+/* Copyright area */
+section.copyright-area p {
+  font-family: var(--copyright-font);
+  color: var(--text-darker);
+  letter-spacing: 0;
+  font-weight: 400;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.copyright-area p a {
+  border-bottom-width: 1px;
+}

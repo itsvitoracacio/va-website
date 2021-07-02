@@ -1,0 +1,229 @@
+/* =================================================
+    Starting with a clean slate & importing fonts
+==================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+/* Resetting all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* ===================
+    Setting variables
+====================== */
+:root {
+  --text-color: hsl(224,8%,36%);
+  --text-darker: hsl(0, 0%, 16%);
+  --bg-color: hsl(60, 100%, 98%);
+  --link-color: hsl(208, 100%, 43%);
+  --divider-color: hsl(0, 0%, 16%, 0.1);
+  --placeholder-color: hsl(0, 0%, 16%, 0.5);
+  --yellow-color: hsl(47,99%,59%);
+  --yellow-low-op: hsl(47,99%,59%,0.5);
+  --red-color: hsl(360,90%,62%);
+  --site-max-width: 1280px;
+  --text-size: 1.15rem;
+  --headline-font: "Fira Sans", sans-serif;
+  --subheadline-font: "Fira Sans", sans-serif;
+  --text-font: 'Inter',sans-serif;
+  --header-font: 'Lato', sans-serif;
+  --button-font: "Fira Sans", sans-serif;
+  --copyright-font: 'Lato', sans-serif;
+  --button-weight: 500;
+  --line-yellow: url("data:image/svg+xml;charset=utf-8,%3Csvg preserveAspectRatio='none' width='120' height='6' viewBox='0 0 120 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M119 0.8C60 4 50-0.5 1 1.5' stroke='%23fc0' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  --line-red: url("data:image/svg+xml;charset=utf-8,%3Csvg preserveAspectRatio='none' width='120' height='6' viewBox='0 0 120 6' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath d='M119 0.8C60 4 50-0.5 1 1.5' stroke='%23f00' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+/* ============================
+    Styling generic elements
+=============================== */
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text-darker);
+}
+
+h1 {
+  font-family: var(--headline-font);
+  font-size: 3rem;
+}
+
+h2,
+h3 {
+  font-family: var(--subheadline-font);
+  font-weight: 600;
+  line-height: 1.3em;
+  margin-top: 1.5em;
+  margin-bottom: 0.85em;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p,
+li {
+  font-family: var(--text-font);
+  font-size: var(--text-size);
+  font-weight: 400;
+  line-height: 1.75em;
+  letter-spacing: -0.25px;
+}
+
+p {
+  margin-bottom: 1.75em;
+}
+
+li {
+  margin-bottom: 0.75em;
+  color: var(--text-darker);
+}
+
+ul {
+  margin-top: -1em;
+  margin-bottom: 2.5em;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: 400;
+  border-bottom: 2px solid var(--link-color);
+  transition: 0.25s;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--bg-color);
+  background-color: var(--link-color);
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  position: relative;
+  border: none;
+}
+
+button a {
+  border-bottom: none;
+  transition: none;
+  color: var(--text-darker);
+  text-decoration: none;
+  font-family: var(--button-font);
+  font-size: 1.25rem;
+  font-weight: var(--button-weight);
+}
+
+button a::before{
+  content: '';
+  display: block;
+  position: absolute;
+  height: 0.5em;
+  width: 95%;
+  left: 0em;
+  bottom: 0.1em;
+  background-color: var(--yellow-low-op);
+  z-index: -1;
+  transform: rotate(-1deg);
+  transition: all cubic-bezier(.42,.25,.51,1) 0.15s;
+}
+
+button a:hover {
+  background-color: transparent;
+  color: var(--text-darker);
+}
+
+button a:hover::before {
+  background-color: var(--yellow-color);
+  height: 1em;
+  width: 98%;
+  left: 0.25em;
+  bottom: 0.15em;
+  transform: rotate(0deg);
+  transition: all cubic-bezier(.42,.25,.51,1) 0.15s;
+}
+
+/* this container determines the width of the website and goes into all sections of the page */
+.inner-wrapper { 
+  max-width: var(--site-max-width);
+}
+
+/* =====================
+    Styling the main
+======================== */
+
+/* Main content, concerning all sections */
+section {
+  display: flex;
+  justify-content: center;
+}
+
+main section:last-of-type {
+  margin-bottom: 5em;
+}
+
+/* ============================
+    Styling text highlights
+=============================== */
+
+mark {
+  margin: 0 -0.4em;
+  padding: 0.1em 0.4em;
+  border-radius: 0.8em 0.3em;
+  background: transparent;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 225, 0, 0.1),
+    rgba(255, 225, 0, 0.7) 4%,
+    rgba(255, 225, 0, 0.3)
+  );
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  color: var(--text-darker);
+}
+
+span.yellow-u {
+  padding-bottom: 0.3em;
+  background: var(--line-yellow) bottom left / 100% 0.3em no-repeat;
+  font-weight: bold;
+}
+span.red-u {
+  padding-bottom: 0.3em;
+  background: var(--line-red) bottom left / 100% 0.3em no-repeat;
+  font-weight: bold;
+}
+
+span.red-circle {
+  position: relative;
+}
+
+span.red-circle svg {
+  width: 3em;
+  height: 1.75em;
+  position: absolute;
+  left: 46%;
+  bottom: 0;
+  transform: translate(-47%, 7px) translateZ(0);
+  fill: none;
+  stroke: var(--red-color);
+  stroke-linecap: round;
+  stroke-width: 1.75px;
+  stroke-dasharray: 180px 278px;
+  stroke-dashoffset: 361px;
+  transition: stroke .25s ease 0.1s
+}

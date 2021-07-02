@@ -1,0 +1,270 @@
+/* Whole header */
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: var(--bg-color);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 1.5em;
+  background-color: var(--bg-color);
+}
+
+/* Mobile menu layout */
+aside.mobile-menu {
+  height: 90.75vh;
+  width: 100%;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  position: fixed;
+  top: 9.25vh;
+  left: 0;
+  opacity: 0.5;
+  transform: translateX(100%);
+  transition: all 0.4s ease-out;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header logo */
+.header-logo .link {
+  color: var(--text-darker);
+}
+
+/* Mobile menu button */
+input.nav-trigger {
+  display: none;
+}
+
+input.nav-trigger:checked ~ aside.mobile-menu {
+  transform: translateX(0);
+  opacity: 0.98;
+}
+
+label.mobile-menu-toggle {
+  display: flex;
+  font-family: var(--header-font);
+  font-size: 1rem;
+  color: var(--text-darker);
+  font-weight: 500;
+  text-transform: lowercase;
+  margin-top: 0.125rem;
+  cursor: pointer;
+}
+
+svg.menu-icon {
+  margin-right: 0.3rem;
+}
+
+span.menu-x {
+  display: none;
+  margin-right: 0.2rem;
+}
+
+input.nav-trigger:checked ~ * span.menu-x {
+  display: block;
+}
+
+input.nav-trigger:checked ~ * span.menu-lines {
+  display: none;
+}
+
+    /* html rect */
+rect.line-1,
+rect.line-2,
+rect.line-3 {
+  opacity: 1;
+  transition: all 0.35s;
+}
+
+input.nav-trigger:checked ~ * rect.line-1 {
+  transform: translateX(0.725em) translateY(-0.1em) rotate(45deg);
+}
+
+input.nav-trigger:checked ~ * rect.line-2 {
+  transform:  translateX(-0.125em) translateY(0.725em) rotate(-45deg);
+}
+
+input.nav-trigger:checked ~ * rect.line-3 {
+  opacity: 0;
+}
+
+/* Header icons (includes social icons and language selector) */
+
+    /* All icons */
+.mobile-header-icons {
+  width: 50%;
+  margin-top: 2em;
+  padding-left: 0.25rem;
+}
+
+.desktop-header-icons {
+  margin-top: 0.5em;
+}
+
+    /* Social icons */
+
+svg.social-icon {
+  fill: var(--text-darker);
+  opacity: 0.85;
+}
+
+.mobile-header-icons svg.social-icon {
+  width: 1.5rem;
+}
+
+.desktop-header-icons svg.social-icon {
+  width: 1.25rem;
+}
+
+    /* Language selector icons */
+
+.mobile-header-icons svg.flag-icon {
+  width: 2rem;
+}
+
+.desktop-header-icons svg.flag-icon {
+  width: 1.5em;
+}
+
+.lang-selector svg {
+  position: relative;
+  top: -0.15em;
+}
+
+
+
+/* All header links */
+.header-logo .link,
+nav.desktop-nav .link,
+.desktop-header-icons a,
+nav.mobile-nav .link,
+.mobile-header-icons a {
+  text-decoration: none;
+  color: var(--text-darker);
+  font-family: var(--header-font);
+  transition: none;
+  border-bottom: none;
+}
+
+.header-logo .link:hover,
+nav.desktop-nav .link:hover,
+.desktop-header-icons a:hover,
+nav.mobile-nav .link:hover,
+.mobile-header-icons a:hover {
+  color: var(--text-darker);
+  background-color: transparent;
+}
+
+/* Header links divided in smaller groups */
+.header-logo .link,
+nav.desktop-nav .link,
+nav.mobile-nav .link {
+  font-weight: 500;
+}
+
+nav.desktop-nav .link,
+nav.mobile-nav .link {
+  text-transform: lowercase;
+}
+
+.desktop-header-icons a {
+  text-align: right;
+}
+
+nav.desktop-nav .link:hover,
+nav.mobile-nav .link:hover {
+  text-decoration: underline;
+}
+
+/* Header lists */
+nav.desktop-nav ul,
+.desktop-header-icons ul,
+nav.mobile-nav ul,
+.mobile-header-icons ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  display: flex;
+}
+
+.desktop-header-icons ul {
+  justify-content: flex-end;
+}
+
+nav.mobile-nav ul {
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-header-icons ul {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* Header lists items */
+nav.desktop-nav ul li,
+.desktop-header-icons li {
+  margin-bottom: 0;
+}
+
+nav.desktop-nav li {
+  padding: 0 1.25em;
+  font-size: 1.1rem;
+}
+
+nav.mobile-nav li {
+  margin-bottom: 1.5em;
+}
+
+.desktop-header-icons li {
+  padding: 0 1.25em;
+  font-size: 1rem;
+}
+
+/* Header responsiveness */
+nav.desktop-nav,
+.desktop-header-icons {
+  display: none;
+}
+
+@media screen and (min-width: 900px) {
+
+  header {
+    position: absolute;
+  }
+
+  .header-inner {
+    padding: 1em 3em;
+    min-height: 6.25rem;
+    border-bottom: 1px solid var(--divider-color);
+  }
+
+  .header-logo,
+  .desktop-header-icons {
+    width: 25%;
+  }
+
+  nav.desktop-nav {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .desktop-header-icons {
+    display: block;
+  }
+
+  label.mobile-menu-toggle {
+    display: none;
+  }
+
+}

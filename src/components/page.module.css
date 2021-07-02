@@ -1,0 +1,35 @@
+/* .above-the-fold sections are used in regular pages */
+.section-inner {
+  padding: 0 2em;
+}
+
+.section-inner p:last-child {
+  margin-bottom: 0;
+}
+
+section.above-the-fold {
+  padding-top: 5.75em;
+}
+
+.about-vitor-pic {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  float: right;
+  margin-left: 0.5rem;
+}
+
+@media screen and (min-width: 900px) {
+  .section-inner {
+    width: 52.5%;
+  }
+
+  section.above-the-fold {
+    padding-top: 24.45vh;
+  }
+
+  .about-vitor-pic {
+    height: 150px;
+    width: 150px;
+  }
+}
