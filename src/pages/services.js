@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 import Lander from '../components/lander';
-import '../components/layout.css';
+import '../styles/layout.scss';
 import { sectionInner } from "../components/page.module.css";
 import {
   introStats,
@@ -20,7 +20,12 @@ import {
   featuresInner,
   auditFormWrapper,
   auditForm,
-  message1stLine
+  message1stLine,
+  formName,
+  formWebsite,
+  formGoal,
+  formEmail,
+  formAuditSubmit
 } from '../components/lander.module.css';
 
 const ServicesPage = () => {
@@ -133,17 +138,17 @@ const ServicesPage = () => {
           <div className={auditFormWrapper}>
             <form action="#" id="audit-form" className={auditForm}>
               <p className={message1stLine}>Hi, Vitor! My name is 
-              <input type="text" name="name" id="name" placeholder="your name here"/>.</p>
+              <input type="text" name="name" className={formName} placeholder="your name here"/>.</p>
               <p>Can you help me with my website? I'll take the free audit, please. The link to my website is 
-              <input type="url" name="website" id="website" placeholder="link to your website"/>.</p>
+              <input type="url" name="website" className={formWebsite} placeholder="link to your website"/>.</p>
               <p>I'm looking to
-              <input type="text" name="goal" id="goal" placeholder="what you want to achieve with your site"/>.</p>
+              <input type="text" name="goal" className={formGoal} placeholder="what you want to achieve with your site"/>.</p>
               <textarea name="comment" form="audit-form" placeholder="Include any additional info here..."></textarea>
               <p>Could you get back to me ASAP?<br/>You can reach me at
-              <input type="email" name="email" id="email" placeholder="your email address"/>.</p>
+              <input type="email" name="email" className={formEmail} placeholder="your email address"/>.</p>
               <p>Have a great day!</p>
               <button><Link href="#">
-                <input type="button" id="audit-submit" value="Get your free website audit"/>
+                <input type="button" className={formAuditSubmit} value="Get your free website audit"/>
               </Link></button>
             </form>
           </div>

@@ -4,9 +4,7 @@ import Layout from './layout'
 const Page = ({ children }) => {
   return (
     <Layout>
-      <main>
-        { children }
-      </main>
+      { children }
     </Layout>
   )
 }

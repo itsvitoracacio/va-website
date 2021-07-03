@@ -1,16 +1,32 @@
-import * as React from 'react'
-import "./layout.css"
-import Header from './header'
-import Footer from './footer'
+import * as React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import "../styles/layout.scss";
+import Header from "./header";
+import Footer from "./footer";
 
-const Layout = ({ children }) => {
+const Layout = ({ pageTitle, children }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `);
+
   return (
     <>
-      <Header/>
-      { children }
-      <Footer/>
+      <Header />
+      <main>
+        <title>
+          {pageTitle} | {data.site.siteMetadata.title}
+        </title>
+        {children}
+      </main>
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

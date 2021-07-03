@@ -2,8 +2,7 @@ import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import Page from "../components/page";
-import { sectionInner } from "../components/page.module.css";
-import { aboveTheFold, aboutVitorPic } from "../components/page.module.css";
+import { sectionInner, aboveTheFold, aboutVitorPic } from "../components/page.module.css";
 
 const AboutPage = () => {
   return (
@@ -25,23 +24,24 @@ const AboutPage = () => {
           </p>
           <p>
             Recently, I'm specializing in{" "}
-            <Link to="/">
+            <Link to="/services">
               building high-converting, lightning-fast websites
             </Link>{" "}
             for businesses that need to generate online growth and credibility.
           </p>
           <p>
             The type of content you will find here is mainly made of{" "}
-            <Link to="/">
-              quick actionable lessons from the small business trenches.
+            <Link to="/blog">
+              quick actionable lessons from the small business trenches
             </Link>
+            , since that's where I spend most of my time.
           </p>
           <p>
             If you’re into that, I can <Link to="/">let you know</Link> when I drop the next piece.
           </p>
           <p>
             And if you wanna know more, this is{" "}
-            <Link to="/">what I’m up to</Link> and the projects I’m involved with.
+            <Link to="/journal">what I’m up to</Link> and the projects I’m involved with.
           </p>
           <p>
             For personal stuff, you can reach out to me on{" "}

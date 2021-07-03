@@ -127,10 +127,10 @@ form.audit-form {
   flex-direction: column;
 }
 
-form.audit-form input#name,
-form.audit-form input#website,
-form.audit-form input#goal,
-form.audit-form input#email,
+form.audit-form input.form-name,
+form.audit-form input.form-website,
+form.audit-form input.form-goal,
+form.audit-form input.form-email,
 form.audit-form textarea {
   background-color: transparent;
   border: none;
@@ -139,12 +139,13 @@ form.audit-form textarea {
   height: 2.5em;
   font-family: var(--text-font);
   color: var(--placeholder-color);
+  margin-left: 0.5em;
 }
 
-form.audit-form input#name,
-form.audit-form input#website,
-form.audit-form input#goal,
-form.audit-form input#email {
+form.audit-form input.form-name,
+form.audit-form input.form-website,
+form.audit-form input.form-goal,
+form.audit-form input.form-email {
   display: inline;
 }
 
@@ -162,36 +163,36 @@ form.audit-form textarea {
   width: 70%;
 }
 
-form.audit-form input#name::placeholder,
-form.audit-form input#website::placeholder,
-form.audit-form input#goal::placeholder,
-form.audit-form input#email::placeholder,
+form.audit-form input.form-name::placeholder,
+form.audit-form input.form-website::placeholder,
+form.audit-form input.form-goal::placeholder,
+form.audit-form input.form-email::placeholder,
 form.audit-form textarea::placeholder {
   font-family: var(--text-font);
   color: var(--placeholder-color);
   font-size: var(--text-size);
 }
 
-form.audit-form input#name::placeholder,
-form.audit-form input#website::placeholder,
-form.audit-form input#goal::placeholder,
-form.audit-form input#email::placeholder {
+form.audit-form input.form-name::placeholder,
+form.audit-form input.form-website::placeholder,
+form.audit-form input.form-goal::placeholder,
+form.audit-form input.form-email::placeholder {
   text-align: center;
 }
 
-input#name {
+input.form-name {
   width: 13em;
 }
 
-input#website {
+input.form-website {
   width: 15em;
 }
 
-input#goal {
+input.form-goal {
   width: 30em;
 }
 
-input#email {
+input.form-email {
   width: 14em;
 }
 
@@ -202,7 +203,7 @@ form.audit-form button {
   margin-top: 2em;
 }
 
-input#audit-submit {
+input.form-audit-submit {
   border: none;
   background-color: transparent;
   font-family: var(--button-font);
