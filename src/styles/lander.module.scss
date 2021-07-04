@@ -139,7 +139,6 @@ form.audit-form textarea {
   height: 2.5em;
   font-family: var(--text-font);
   color: var(--placeholder-color);
-  margin-left: 0.5em;
 }
 
 form.audit-form input.form-name,
@@ -147,6 +146,7 @@ form.audit-form input.form-website,
 form.audit-form input.form-goal,
 form.audit-form input.form-email {
   display: inline;
+  margin-left: 0.5em;
 }
 
 form.audit-form p {
@@ -223,7 +223,7 @@ input.form-audit-submit {
   }
 
   .welcome-section h2 {
-    width: 75%;
+    width: 77.5%;
   }
 
   /* Responsive main  */
