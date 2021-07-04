@@ -1,4 +1,4 @@
-/* .above-the-fold sections are used in regular pages */
+/* .content sections are used in regular pages */
 .section-inner {
   padding: 0 2em;
 }
@@ -7,7 +7,7 @@
   margin-bottom: 0;
 }
 
-section.above-the-fold {
+section.content {
   padding-top: 5.75em;
 }
 
@@ -24,7 +24,7 @@ section.above-the-fold {
     width: 52.5%;
   }
 
-  section.above-the-fold {
+  section.content {
     padding-top: 24.45vh;
   }
 

@@ -1,6 +1,7 @@
 ---
 title: "First Gatsby Blog Post"
 date: "2020-01-18"
+permalink: "post1"
 ---
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit.

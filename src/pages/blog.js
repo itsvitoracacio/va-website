@@ -1,36 +1,45 @@
 import * as React from "react";
-import { graphql } from "gatsby";
-import Page from "../components/page";
-import { sectionInner, aboveTheFold } from "../components/page.module.css";
+import { graphql, useStaticQuery, Link } from "gatsby";
+import Page from "../templates/page";
 
-const BlogPage = ({ data }) => {
+const BlogPage = () => {
+  const data = useStaticQuery(
+    graphql`
+      query {
+        allMarkdownRemark {
+          edges {
+            node {
+              frontmatter {
+                date(formatString: "DD MMM YYYY")
+                title
+                permalink
+              }
+              id
+              fields {
+                slug
+              }
+            }
+          }
+        }
+      }
+    `
+  );
+
   return (
     <Page>
-      <section className={aboveTheFold}>
-        <div className={sectionInner}>
-          <h1>Blog Posts</h1>
-          <ul>
-            {data.allFile.nodes.map((node) => (
-              <li key={(node.name, node.birthTime)}>
-                {node.birthTime} » {node.name}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
+      <h1>Blog Posts</h1>
+      <ul>
+        {data.allMarkdownRemark.edges.map((edge) => (
+          <li key={edge.node.id}>
+            <span>{edge.node.frontmatter.date}</span> »{" "}
+            <Link to={`/blog/${edge.node.fields.slug}/`}>
+              {edge.node.frontmatter.title}
+            </Link>
+          </li>
+        ))}
+      </ul>
     </Page>
   );
 };
-
-export const query = graphql`
-  query {
-    allFile {
-      nodes {
-        name
-        birthTime(formatString: "DD MMM YYYY")
-      }
-    }
-  }
-`;
 
 export default BlogPage;

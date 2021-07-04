@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
-import Lander from '../components/lander';
+import Lander from '../templates/lander';
 import '../styles/layout.scss';
-import { sectionInner } from "../components/page.module.css";
+import { sectionInner } from "../components/page.module.scss";
 import {
   introStats,
   problemDefinition,
