@@ -270,7 +270,7 @@ const ServicesPage = () => {
                   type="text"
                   name="goal"
                   className={landerStyles.formGoal}
-                  placeholder="what you want to achieve with your site"
+                  placeholder="your current marketing goal"
                 />
                 .
               </p>
