@@ -1,19 +1,14 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import Layout from "../components/layout";
-import {
-  welcomeSection,
-  innerWrapper,
-  welcomeContainer,
-  buttonWrapper,
-} from "../components/lander.module.css";
+import * as landerStyles from "../styles/lander.module.scss";
 
 const Lander = ({ children }) => {
   return (
     <Layout>
-      <section className={welcomeSection}>
-        <div className={innerWrapper}>
-          <div className={welcomeContainer}>
+      <section className={landerStyles.welcomeSection}>
+        <div className={landerStyles.innerWrapper}>
+          <div className={landerStyles.welcomeContainer}>
             <h1>
               Are you feeling{" "}
               <span class="red-circle">
@@ -26,7 +21,7 @@ const Lander = ({ children }) => {
               <span class="yellow-u">marketing & sales?</span>
             </h1>
             <h2>Get your high-converting, lightning-fast website built by a marketing pro.</h2>
-            <div className={buttonWrapper}>
+            <div>
               <button type="button">
                 <Link to="/">Get a free audit of your website</Link>
               </button>

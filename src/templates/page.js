@@ -1,6 +1,6 @@
 import * as React from "react";
 import Layout from "../components/layout";
-import { content, sectionInner } from "../components/page.module.scss";
+import { content, sectionInner } from "../styles/page.module.scss";
 
 const Page = ({ children }) => {
   return (

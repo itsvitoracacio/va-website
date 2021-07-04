@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import * as footerStyles from "./footer.module.scss";
+import * as footerStyles from "../styles/footer.module.scss";
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
       <section class={footerStyles.copyrightArea}>
         <p>
           made with my 👋 in Belo Horizonte
-          <br /> this website <Link to="/">only collects data</Link> you
+          <br /> this website <Link to="/privacy">only collects data</Link> you
           actively submit
         </p>
       </section>

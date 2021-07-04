@@ -3,6 +3,7 @@ import ServicesPage from "./services"
 
 const IndexPage = () => {
   return (
+    
     <ServicesPage/>
   )
 }

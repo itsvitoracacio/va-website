@@ -1,14 +1,11 @@
 ---
-title: "First Gatsby Blog Post"
-date: "2020-01-18"
+title: "We Are Giving $1M Toward SF COVID-19 Response"
+date: "2020-03-25"
 permalink: "post1"
+description: ""
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
-## Excepturi maxime
-
-reprehenderit accusamus, explicabo eligendi necessitatibus soluta! Ipsam mollitia alias temporibus dicta
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit accusamus, explicabo eligendi necessitatibus soluta! Ipsam mollitia alias temporibus dicta
 
 1. omnis earum nobis
 2. architecto, quia

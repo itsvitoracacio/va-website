@@ -2,6 +2,7 @@
 title: "Second Gatsby Blog Post"
 date: "2020-01-19"
 permalink: "post2"
+description: ""
 ---
 Seprehenderit accusamus, explicabo eligendi necessitatibus soluta! 
 

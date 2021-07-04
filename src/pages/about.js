@@ -2,11 +2,16 @@ import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import Page from "../templates/page";
-import { aboutVitorPic } from "../components/page.module.scss";
+import { aboutVitorPic } from "../styles/page.module.scss";
+import Metadata from "../components/metadata";
 
 const AboutPage = () => {
   return (
     <Page>
+      <Metadata
+        title="About"
+        description="Vitor Acacio is an international marketing consultant specializing in building high-converting, lightning-fast websites"
+      />
       <h1>Hey, I'm Vitor.</h1>
       <StaticImage
         className={aboutVitorPic}
@@ -37,18 +42,18 @@ const AboutPage = () => {
         , since that's where I spend most of my time.
       </p>
       <p>
-        If you’re into that, I can <Link to="/">let you know</Link> when I drop
-        the next piece.
+        If you’re into that, I'm setting up a newsletter in the next few days so
+        can let you know when I drop the next piece.
       </p>
       <p>
-        And if you wanna know more, this is{" "}
-        <Link to="/journal">what I’m up to</Link> and the projects I’m involved
-        with.
+        And if you wanna know more, I will also start publishing what I’m up to
+        and the projects I’m involved with.
       </p>
       <p>
         For personal stuff, you can reach out to me on{" "}
         <Link to="https://twitter.com/itsvitoracacio">Twitter</Link>. Now, if
-        you wanna talk business, it's best to email me at vitor@vitoracacio.com.
+        you wanna talk business, it's best to email me at{" "}
+        <a href="mailto:vitor@vitoracacio.com">vitor@vitoracacio.com</a>.
       </p>
       <p>Thanks for dropping by!</p>
       <p>- Vitor</p>
