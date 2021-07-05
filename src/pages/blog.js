@@ -14,7 +14,6 @@ const BlogPage = () => {
               frontmatter {
                 date(formatString: "DD MMM YYYY")
                 title
-                permalink
               }
               id
               fields {

@@ -1,7 +1,8 @@
 ---
 title: "Second Gatsby Blog Post"
 date: "2020-01-19"
-permalink: "post2"
+tag: "post1"
+lang: ""
 description: ""
 ---
 Seprehenderit accusamus, explicabo eligendi necessitatibus soluta! 

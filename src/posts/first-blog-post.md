@@ -1,7 +1,8 @@
 ---
 title: "We Are Giving $1M Toward SF COVID-19 Response"
 date: "2020-03-25"
-permalink: "post1"
+tag: "post1"
+lang: ""
 description: ""
 ---
 

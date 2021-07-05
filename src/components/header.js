@@ -14,17 +14,29 @@ const Header = () => {
         <nav className={headerStyles.desktopNav}>
           <ul>
             <li>
-              <Link to="/about" className={headerStyles.link}>
+              <Link
+                to="/about"
+                className={headerStyles.link}
+                activeClassName={headerStyles.navActive}
+              >
                 about
               </Link>
             </li>
             <li>
-              <Link to="/services" className={headerStyles.link}>
+              <Link
+                to="/services"
+                className={headerStyles.link}
+                activeClassName={headerStyles.navActive}
+              >
                 services
               </Link>
             </li>
             <li>
-              <Link to="/blog" className={headerStyles.link}>
+              <Link
+                to="/blog"
+                className={headerStyles.link}
+                activeClassName={headerStyles.navActive}
+              >
                 blog
               </Link>
             </li>
@@ -98,7 +110,7 @@ const Header = () => {
           id="nav-trigger"
           className={headerStyles.navTrigger}
         />
-        <label for="nav-trigger" className={headerStyles.mobileMenuToggle}>
+        <label htmlFor="nav-trigger" className={headerStyles.mobileMenuToggle}>
           <svg
             className={headerStyles.menuIcon}
             width="24px"
@@ -140,17 +152,29 @@ const Header = () => {
           <nav className={headerStyles.mobileNav}>
             <ul>
               <li>
-                <Link to="/about" className={headerStyles.link}>
+                <Link
+                  to="/about"
+                  className={headerStyles.link}
+                  activeClassName={headerStyles.navActive}
+                >
                   about
                 </Link>
               </li>
               <li>
-                <Link to="/services" className={headerStyles.link}>
+                <Link
+                  to="/services"
+                  className={headerStyles.link}
+                  activeClassName={headerStyles.navActive}
+                >
                   services
                 </Link>
               </li>
               <li>
-                <Link to="/blog" className={headerStyles.link}>
+                <Link
+                  to="/blog"
+                  className={headerStyles.link}
+                  activeClassName={headerStyles.navActive}
+                >
                   blog
                 </Link>
               </li>

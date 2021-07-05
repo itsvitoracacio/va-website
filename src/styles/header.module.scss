@@ -168,6 +168,10 @@ nav.mobile-nav .link:hover,
   background-color: transparent;
 }
 
+.nav-active {
+  text-decoration: underline;
+}
+
 /* Header links divided in smaller groups */
 .header-logo .link,
 nav.desktop-nav .link,

@@ -5,6 +5,7 @@ import "../styles/layout.scss";
 import { sectionInner } from "../styles/page.module.scss";
 import Metadata from "../components/metadata";
 import * as landerStyles from "../styles/lander.module.scss";
+import FormAuditRequest from "../components/audit-request";
 
 const ServicesPage = () => {
   return (
@@ -115,16 +116,18 @@ const ServicesPage = () => {
             many moving pieces, I decided to narrow it down.
           </p>
           <p>
-            And by specializing in building websites with a cutting edge structure,
-            I can make sure that they'll be{" "}
+            And by specializing in building websites with a cutting edge
+            structure, I can make sure that they'll be{" "}
             <span class="yellow-u">
-              100% ready for that profitable marketing strategy you need to deploy
+              100% ready for that profitable marketing strategy you need to
+              deploy
             </span>
             .
           </p>
           <p>
             So in order to build a stunning portfolio on this specific area as
-            fast as I can, I came up with a very good offer that I can only make available to a few small businesses...
+            fast as I can, I came up with a very good offer that I can only make
+            available to a few small businesses...
           </p>
         </div>
       </section>
@@ -240,68 +243,11 @@ const ServicesPage = () => {
             . There's a field in the message for additional comments, so you can
             mention it there.
           </p>
-          <h2 id="free-audit-message" className={landerStyles.freeAudit}>Request your free website audit</h2>
+          <h2 id="free-audit-message" className={landerStyles.freeAudit}>
+            Request your free website audit
+          </h2>
           <div>
-            <form data-netlify="true" name="audit-form" id="audit-form" className={landerStyles.auditForm}>
-              <p className={landerStyles.message1stLine}>
-                Hi, Vitor! My name is
-                <input
-                  type="text"
-                  name="name"
-                  className={landerStyles.formName}
-                  placeholder="your name here"
-                />
-                .
-              </p>
-              <p>
-                Can you help me with my website? I'll take the free audit,
-                please. The link to my website is
-                <input
-                  type="text"
-                  name="website"
-                  className={landerStyles.formWebsite}
-                  placeholder="link to your website"
-                />
-                .
-              </p>
-              <p>
-                I'm looking to
-                <input
-                  type="text"
-                  name="goal"
-                  className={landerStyles.formGoal}
-                  placeholder="your current marketing goal"
-                />
-                .
-              </p>
-              <textarea
-                name="comment"
-                form="audit-form"
-                placeholder="Include any additional info here..."
-              ></textarea>
-              <p>
-                Could you get back to me ASAP?
-                <br />
-                You can reach me at
-                <input
-                  type="email"
-                  name="email"
-                  className={landerStyles.formEmail}
-                  placeholder="your email address"
-                />
-                .
-              </p>
-              <p>Have a great day!</p>
-              <button>
-                <Link href="/">
-                  <input
-                    type="button"
-                    className={landerStyles.formAuditSubmit}
-                    value="Get your free website audit"
-                  />
-                </Link>
-              </button>
-            </form>
+            <FormAuditRequest />
           </div>
         </div>
       </section>
