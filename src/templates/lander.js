@@ -25,7 +25,7 @@ const Lander = ({ children }) => {
             </h2>
             <div>
               <button type="button">
-                <Link to="#free-audit">Get a free audit of your website</Link>
+                <Link to="#free-audit-message">Get a free audit of your website</Link>
               </button>
             </div>
           </div>

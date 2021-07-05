@@ -240,7 +240,7 @@ const ServicesPage = () => {
             . There's a field in the message for additional comments, so you can
             mention it there.
           </p>
-          <h2 id="free-audit">Request your free website audit</h2>
+          <h2 id="free-audit-message" className={landerStyles.freeAudit}>Request your free website audit</h2>
           <div>
             <form data-netlify="true" name="audit-form" id="audit-form" className={landerStyles.auditForm}>
               <p className={landerStyles.message1stLine}>
@@ -257,7 +257,7 @@ const ServicesPage = () => {
                 Can you help me with my website? I'll take the free audit,
                 please. The link to my website is
                 <input
-                  type="url"
+                  type="text"
                   name="website"
                   className={landerStyles.formWebsite}
                   placeholder="link to your website"
