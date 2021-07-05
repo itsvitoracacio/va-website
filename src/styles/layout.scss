@@ -39,6 +39,9 @@
 /* ============================
     Styling generic elements
 =============================== */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: var(--bg-color);

@@ -240,9 +240,9 @@ const ServicesPage = () => {
             . There's a field in the message for additional comments, so you can
             mention it there.
           </p>
-          <h2 id="website-offer-cta">Request your free website audit</h2>
+          <h2 id="free-audit">Request your free website audit</h2>
           <div>
-            <form action="/" id="audit-form" className={landerStyles.auditForm}>
+            <form data-netlify="true" name="audit-form" id="audit-form" className={landerStyles.auditForm}>
               <p className={landerStyles.message1stLine}>
                 Hi, Vitor! My name is
                 <input

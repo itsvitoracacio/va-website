@@ -16,12 +16,12 @@ header {
 
 /* Mobile menu layout */
 aside.mobile-menu {
-  height: 90.75vh;
+  height: 100vh;
   width: 100%;
   background-color: var(--bg-color);
   color: var(--text-color);
   position: fixed;
-  top: 9.25vh;
+  top: 0;
   left: 0;
   opacity: 0.5;
   transform: translateX(100%);
@@ -31,6 +31,12 @@ aside.mobile-menu {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+// Header items above aside block when open
+.header-logo,
+label.mobile-menu-toggle {
+  z-index: 2;
 }
 
 /* Header logo */
@@ -76,7 +82,6 @@ input.nav-trigger:checked ~ * span.menu-lines {
   display: none;
 }
 
-    /* html rect */
 rect.line-1,
 rect.line-2,
 rect.line-3 {
