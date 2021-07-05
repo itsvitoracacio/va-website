@@ -11,7 +11,7 @@ const ServicesPage = () => {
     <Lander>
       <Metadata
         title="Services"
-        description="Vitor Acacio is an international marketing consultant specializing in building high-converting, lightning-fast websites"
+        description="Vitor Acacio is an international marketing consultant specialising in building high-converting, lightning-fast websites"
       />
       <section>
         <div className={sectionInner}>
@@ -25,13 +25,27 @@ const ServicesPage = () => {
             one or the other. And you can measure it.
           </p>
           <p>
-            See, <a target="_blank" rel="noreferrer" href="https://research.google/pubs/pub38315/">it takes around 0.05 seconds for us to decide</a>{" "}
+            See,{" "}
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://research.google/pubs/pub38315/"
+            >
+              it takes around 0.05 seconds for us to decide
+            </a>{" "}
             whether we're going to stay on a website or leave it for the
             competition.
           </p>
           <p>
             And if your page takes more than 3 seconds to load,{" "}
-            <a target="_blank" rel="noreferrer" href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/mobile-site-load-time-statistics/">you've already lost 53% of your visitors</a> right then.
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/mobile-site-load-time-statistics/"
+            >
+              you've already lost 53% of your visitors
+            </a>{" "}
+            right then.
           </p>
         </div>
       </section>
@@ -115,7 +129,7 @@ const ServicesPage = () => {
             many moving pieces, I decided to narrow it down.
           </p>
           <p>
-            And by specializing in building websites with a cutting edge
+            And by specialising in building websites with a cutting edge
             structure, I can make sure that they'll be{" "}
             <span class="yellow-u">
               100% ready for that profitable marketing strategy you need to
@@ -135,48 +149,49 @@ const ServicesPage = () => {
           <h3>Here's what your new website can help you achieve:</h3>
           <ul className={landerStyles.benefitsList}>
             <li class={landerStyles.benefitCard}>
-              <h3>Client Acquisition System</h3>
+              <h3>A System For Client Acquisition</h3>
               <p>
                 Stop relying on word of mouth and treating your campaigns as
-                one-offs. Have all your marketing activities work as an engine.
-              </p>
-            </li>
-            <li class={landerStyles.benefitCard}>
-              <h3>High-Converting Design</h3>
-              <p>
-                With a direct path leading your visitor to the sale, you're able
-                to get a higher return on each dollar you put into marketing.
-              </p>
-            </li>
-            <li class={landerStyles.benefitCard}>
-              <h3>Market Credibility</h3>
-              <p>
-                Control the story being told about your business. The way
-                customers perceive your brand is key for differentiation.
+                one-offs. Instead, have all your marketing working as an engine.
               </p>
             </li>
             <li class={landerStyles.benefitCard}>
               <h3>Business Development</h3>
               <p>
-                Engage with your visitors in different ways based on how close
-                they are to buying from you.{" "}
+                Your visitors engage with you differently, depending on how
+                close they are to buying from you. So you'll now be able to
+                treat each person according to their needs.
+              </p>
+            </li>
+            <li class={landerStyles.benefitCard}>
+              <h3>High-Converting Design</h3>
+              <p>
+                Visual elements backed by hundreds of thousands of dollars spent
+                in reasearch. You'll be able to get a higher return on each
+                dollar you put into marketing.
+              </p>
+            </li>
+            <li class={landerStyles.benefitCard}>
+              <h3>Less Headaches</h3>
+              <p>
+                With one of the most secure architectures out there, there's a
+                much lower chance of servers going down, customer data leaks and
+                malware infiltration.
+              </p>
+            </li>
+            <li class={landerStyles.benefitCard}>
+              <h3>Market Credibility</h3>
+              <p>
+                Control the story being told about your business. The way your
+                customers perceive your brand is key for competitor
+                differentiation.
               </p>
             </li>
             <li class={landerStyles.benefitCard}>
               <h3>Paid Ads & SEO Results</h3>
               <p>
-                Implement any traffic source the right way. You'll be able to
-                tweak your efforts based on accurate data and aim for a higher
-                ROI.
-              </p>
-            </li>
-            <li class={landerStyles.benefitCard}>
-              <h3>Less Business Headaches</h3>
-              <p>
-                With your new online hub, It's been quite a while now since SEO
-                isn't only keywords and metatags anymore. More than never,
-                google cares about the user experience. That's why you need a
-                website that's fast, responsive, accessible.
+                With a faster and market-ready website, you'll be able to apply
+                any traffic source with a higher chance of making it profitable.
               </p>
             </li>
           </ul>
@@ -198,7 +213,7 @@ const ServicesPage = () => {
                 <li>All pages custom coded</li>
                 <li>Essential on-page SEO</li>
                 <li>Lightning-fast performance</li>
-                <li>3-week delivery</li>
+                <li>4-week delivery</li>
                 <li>30-day support, including changes</li>
               </ul>
             </div>

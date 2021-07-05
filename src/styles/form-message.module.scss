@@ -46,7 +46,7 @@ form.audit-form input.form-goal::placeholder,
 form.audit-form input.form-email::placeholder,
 form.audit-form textarea::placeholder {
   font-family: var(--text-font);
-  color: var(--placeholder-color);
+  color: var(--text-darker);
   font-size: var(--text-size);
 }
 
@@ -74,7 +74,6 @@ input.form-email {
 }
 
 form.audit-form button {
-  //width: 13em;
   padding: 0 0.3em;
   align-self: center;
   margin-top: 2em;

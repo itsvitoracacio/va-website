@@ -10,7 +10,7 @@ const AboutPage = () => {
     <Page>
       <Metadata
         title="About"
-        description="Vitor Acacio is an international marketing consultant specializing in building high-converting, lightning-fast websites"
+        description="Vitor Acacio is an international marketing consultant specialising in building high-converting, lightning-fast websites"
       />
       <h1>Hey, I'm Vitor.</h1>
       <StaticImage
@@ -28,7 +28,7 @@ const AboutPage = () => {
         hands-on implementation and through advisory & training.
       </p>
       <p>
-        Recently, I'm specializing in{" "}
+        Recently, I'm specialising in{" "}
         <Link to="/services">
           building high-converting, lightning-fast websites
         </Link>{" "}
