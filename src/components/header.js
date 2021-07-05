@@ -2,6 +2,10 @@ import * as React from "react";
 import { Link } from "gatsby";
 import * as headerStyles from "../styles/header.module.scss";
 
+const navActive = {
+  textDecoration: "underline",
+};
+
 const Header = () => {
   return (
     <header>
@@ -17,7 +21,7 @@ const Header = () => {
               <Link
                 to="/about"
                 className={headerStyles.link}
-                activeClassName={headerStyles.navActive}
+                activeStyle={navActive}
               >
                 about
               </Link>
@@ -26,7 +30,7 @@ const Header = () => {
               <Link
                 to="/services"
                 className={headerStyles.link}
-                activeClassName={headerStyles.navActive}
+                activeStyle={navActive}
               >
                 services
               </Link>
@@ -35,7 +39,8 @@ const Header = () => {
               <Link
                 to="/blog"
                 className={headerStyles.link}
-                activeClassName={headerStyles.navActive}
+                activeStyle={navActive}
+                partiallyActive={true}
               >
                 blog
               </Link>
@@ -155,7 +160,7 @@ const Header = () => {
                 <Link
                   to="/about"
                   className={headerStyles.link}
-                  activeClassName={headerStyles.navActive}
+                  activeStyle={navActive}
                 >
                   about
                 </Link>
@@ -164,7 +169,7 @@ const Header = () => {
                 <Link
                   to="/services"
                   className={headerStyles.link}
-                  activeClassName={headerStyles.navActive}
+                  activeStyle={navActive}
                 >
                   services
                 </Link>
@@ -173,7 +178,8 @@ const Header = () => {
                 <Link
                   to="/blog"
                   className={headerStyles.link}
-                  activeClassName={headerStyles.navActive}
+                  activeStyle={navActive}
+                  partiallyActive={true}
                 >
                   blog
                 </Link>

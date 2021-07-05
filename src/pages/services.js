@@ -1,11 +1,10 @@
 import * as React from "react";
-import { Link } from "gatsby";
 import Lander from "../templates/lander";
 import "../styles/layout.scss";
 import { sectionInner } from "../styles/page.module.scss";
 import Metadata from "../components/metadata";
 import * as landerStyles from "../styles/lander.module.scss";
-import FormAuditRequest from "../components/audit-request";
+import FormAuditRequest from "../components/audit-request-form";
 
 const ServicesPage = () => {
   return (
@@ -26,13 +25,13 @@ const ServicesPage = () => {
             one or the other. And you can measure it.
           </p>
           <p>
-            See, <a href="/">it takes around 0.05 seconds for us to decide</a>{" "}
+            See, <a target="_blank" rel="noreferrer" href="https://research.google/pubs/pub38315/">it takes around 0.05 seconds for us to decide</a>{" "}
             whether we're going to stay on a website or leave it for the
             competition.
           </p>
           <p>
             And if your page takes more than 3 seconds to load,{" "}
-            <a href="/">you've already lost 53% of your visitors</a> right then.
+            <a target="_blank" rel="noreferrer" href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/mobile-site-load-time-statistics/">you've already lost 53% of your visitors</a> right then.
           </p>
         </div>
       </section>

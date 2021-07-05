@@ -13,24 +13,24 @@
     Setting variables
 ====================== */
 :root {
-  --text-color: hsl(224,8%,36%);
+  --text-color: hsl(224, 8%, 36%);
   --text-darker: hsl(0, 0%, 16%);
   --text-lighter: rgb(153, 153, 153);
   --bg-color: hsl(60, 100%, 98%);
   --link-color: hsl(208, 100%, 43%);
   --divider-color: hsl(0, 0%, 16%, 0.1);
   --placeholder-color: hsl(0, 0%, 16%, 0.5);
-  --yellow-color: hsl(47,99%,59%);
-  --yellow-low-op: hsl(47,99%,59%,0.5);
-  --red-color: hsl(360,90%,62%);
+  --yellow-color: hsl(47, 99%, 59%);
+  --yellow-low-op: hsl(47, 99%, 59%, 0.5);
+  --red-color: hsl(360, 90%, 62%);
   --site-max-width: 1280px;
   --text-size: 1.15rem;
   --headline-font: "Fira Sans", sans-serif;
   --subheadline-font: "Fira Sans", sans-serif;
-  --text-font: 'Inter',sans-serif;
-  --header-font: 'Lato', sans-serif;
+  --text-font: "Inter", sans-serif;
+  --header-font: "Lato", sans-serif;
   --button-font: "Fira Sans", sans-serif;
-  --copyright-font: 'Lato', sans-serif;
+  --copyright-font: "Lato", sans-serif;
   --button-weight: 500;
   --line-yellow: url("data:image/svg+xml;charset=utf-8,%3Csvg preserveAspectRatio='none' width='120' height='6' viewBox='0 0 120 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M119 0.8C60 4 50-0.5 1 1.5' stroke='%23fc0' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
   --line-red: url("data:image/svg+xml;charset=utf-8,%3Csvg preserveAspectRatio='none' width='120' height='6' viewBox='0 0 120 6' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath d='M119 0.8C60 4 50-0.5 1 1.5' stroke='%23f00' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
@@ -117,14 +117,21 @@ a:hover {
   cursor: pointer;
 }
 
+button a {
+  border-bottom: none;
+  color: inherit;
+  font-weight: inherit;
+}
+
+button a:hover {
+  color: inherit;
+  background-color: inherit;
+}
+
 button {
   background-color: transparent;
   position: relative;
   border: none;
-}
-
-button a {
-  border-bottom: none;
   transition: none;
   color: var(--text-darker);
   text-decoration: none;
@@ -133,8 +140,8 @@ button a {
   font-weight: var(--button-weight);
 }
 
-button a::before{
-  content: '';
+button::before {
+  content: "";
   display: block;
   position: absolute;
   height: 0.5em;
@@ -144,26 +151,26 @@ button a::before{
   background-color: var(--yellow-low-op);
   z-index: -1;
   transform: rotate(-1deg);
-  transition: all cubic-bezier(.42,.25,.51,1) 0.15s;
+  transition: all cubic-bezier(0.42, 0.25, 0.51, 1) 0.15s;
 }
 
-button a:hover {
+button:hover {
   background-color: transparent;
   color: var(--text-darker);
 }
 
-button a:hover::before {
+button:hover::before {
   background-color: var(--yellow-color);
   height: 1em;
   width: 98%;
   left: 0.25em;
   bottom: 0.15em;
   transform: rotate(0deg);
-  transition: all cubic-bezier(.42,.25,.51,1) 0.15s;
+  transition: all cubic-bezier(0.42, 0.25, 0.51, 1) 0.15s;
 }
 
 /* this container determines the width of the website and goes into all sections of the page */
-.inner-wrapper { 
+.inner-wrapper {
   max-width: var(--site-max-width);
 }
 
@@ -229,5 +236,5 @@ span.red-circle svg {
   stroke-width: 1.75px;
   stroke-dasharray: 180px 278px;
   stroke-dashoffset: 361px;
-  transition: stroke .25s ease 0.1s
+  transition: stroke 0.25s ease 0.1s;
 }
