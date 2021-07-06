@@ -20,6 +20,7 @@ const FormAuditRequest = () => {
           name="name"
           className={formMessageStyles.formName}
           placeholder="your name here"
+          required
         />
         .
       </p>
@@ -42,6 +43,7 @@ const FormAuditRequest = () => {
           name="goal"
           className={formMessageStyles.formGoal}
           placeholder="your current marketing goal"
+          required
         />
         .
       </p>
@@ -59,6 +61,7 @@ const FormAuditRequest = () => {
           name="email"
           className={formMessageStyles.formEmail}
           placeholder="your email address"
+          required
         />
         .
       </p>

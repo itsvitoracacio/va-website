@@ -101,30 +101,34 @@ ul {
 }
 
 a {
+  text-decoration-color: var(--link-color);
+  text-underline-offset: 2px;
   color: var(--link-color);
-  text-decoration: none;
-  font-weight: 400;
-  border-bottom: 2px solid var(--link-color);
-  transition: 0.25s;
+  background-image: linear-gradient(120deg,var(--link-color),var(--link-color));
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 0;
+  transition: all .125s ease-in-out;
 }
 
 a:hover {
-  text-decoration: none;
   color: var(--bg-color);
-  background-color: var(--link-color);
-  transition: 0.25s;
-  cursor: pointer;
+  background-image: linear-gradient(120deg,var(--link-color),var(--link-color));
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: all .125s ease-in-out;
 }
 
 button a {
-  border-bottom: none;
   color: inherit;
-  font-weight: inherit;
+  background-image: none;
+  text-decoration: none;
 }
 
 button a:hover {
   color: inherit;
-  background-color: inherit;
+  background-image: none;
 }
 
 button {
@@ -208,15 +212,21 @@ mark {
   color: var(--text-darker);
 }
 
-span.yellow-u {
+span.yellow-u,
+span.red-u {
   padding-bottom: 0.3em;
   background: var(--line-yellow) bottom left / 100% 0.3em no-repeat;
   font-weight: bold;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
+
+span.yellow-u {
+  background: var(--line-yellow) bottom left / 100% 0.3em no-repeat;
+}
+
 span.red-u {
-  padding-bottom: 0.3em;
   background: var(--line-red) bottom left / 100% 0.3em no-repeat;
-  font-weight: bold;
 }
 
 span.red-circle {
