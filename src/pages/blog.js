@@ -33,6 +33,7 @@ const BlogPage = () => {
         description="List of all blog posts from www.vitoracacio.com"
       />
       <h1 className={styles.pageTitle}>Blog Posts</h1>
+      <p>The type of content you will find here is mainly made of quick actionable lessons from the small business trenches, since that's where I spend most of my time.</p>
       <ul className={styles.postsList}>
         {data.allMarkdownRemark.edges.map((edge) => (
           <li key={edge.node.id}>
