@@ -15,7 +15,7 @@ const NotFoundPage = () => {
         Well, this url doesn't link to an existing page...
         <br />
         But so you don't miss the trip,{" "}
-        <Link to="/blog">check my latest articles</Link>
+        <Link to="/journal">check out what I've been up to.</Link>
       </p>
     </Page>
   );

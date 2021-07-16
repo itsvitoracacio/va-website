@@ -29,8 +29,8 @@ exports.createPages = async ({ graphql, actions }) => {
   `)
   response.data.allMarkdownRemark.edges.forEach(edge => {
     createPage({
-      path: `/blog/${edge.node.fields.slug}`,
-      component: path.resolve("./src/templates/blog-post.js"),
+      path: `/journal/${edge.node.fields.slug}`,
+      component: path.resolve("./src/templates/jentries.js"),
       context: {
         slug: edge.node.fields.slug,
       },

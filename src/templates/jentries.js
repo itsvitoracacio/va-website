@@ -17,7 +17,7 @@ export const query = graphql`
   }
 `;
 
-const BlogPost = (props) => {
+const JournalEntries = (props) => {
   return (
     <Page>
       <Metadata
@@ -36,4 +36,4 @@ const BlogPost = (props) => {
   );
 };
 
-export default BlogPost;
+export default JournalEntries;

@@ -16,21 +16,12 @@ const NavbarContent = () => {
       </li>
       <li>
         <Link
-          to="/services"
-          className={headerStyles.link}
-          activeStyle={navActive}
-        >
-          services
-        </Link>
-      </li>
-      <li>
-        <Link
-          to="/blog"
+          to="/journal"
           className={headerStyles.link}
           activeStyle={navActive}
           partiallyActive={true}
         >
-          blog
+          journal
         </Link>
       </li>
     </ul>

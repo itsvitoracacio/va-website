@@ -4,7 +4,7 @@ import Page from "../templates/page";
 import Metadata from "../components/metadata";
 import * as styles from "../styles/page.module.scss"
 
-const BlogPage = () => {
+const JournalPage = () => {
   const data = useStaticQuery(
     graphql`
       query {
@@ -29,16 +29,16 @@ const BlogPage = () => {
   return (
     <Page>
       <Metadata
-        title="Blog"
-        description="List of all blog posts from www.vitoracacio.com"
+        title="Journal"
+        description="List of all journal entries from Vitor Acacio"
       />
-      <h1 className={styles.pageTitle}>Blog Posts</h1>
-      <p>The type of content you will find here is mainly made of quick actionable lessons from the small business trenches, since that's where I spend most of my time.</p>
+      <h1 className={styles.pageTitle}>All Journal Entries</h1>
+      <p>These are some thoughts on what I'm working on, the challenges I'm facing, and how I'm getting past them. Might help you if you're doing something similar.</p>
       <ul className={styles.postsList}>
         {data.allMarkdownRemark.edges.map((edge) => (
           <li key={edge.node.id}>
             <span className={styles.postsListDate}>{edge.node.frontmatter.date}</span> »{" "}
-            <Link to={`/blog/${edge.node.fields.slug}/`}>
+            <Link to={`/journal/${edge.node.fields.slug}/`}>
               {edge.node.frontmatter.title}
             </Link>
           </li>
@@ -48,4 +48,4 @@ const BlogPage = () => {
   );
 };
 
-export default BlogPage;
+export default JournalPage;

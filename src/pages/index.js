@@ -1,10 +1,10 @@
 import * as React from "react"
-import ServicesPage from "./services"
+import AboutPage from "./about"
 
 const IndexPage = () => {
   return (
     
-    <ServicesPage/>
+    <AboutPage/>
   )
 }
 
