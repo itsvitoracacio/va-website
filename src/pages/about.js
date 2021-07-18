@@ -10,12 +10,12 @@ const AboutPage = () => {
     <Page>
       <Metadata
         title="About"
-        description="Vitor Acacio is an international marketing consultant specialising in building high-converting, lightning-fast websites"
+        description="About page for Vitor Acacio. I'm an international marketing professional building my own business and learning about blockchain & crypto."
       />
       <h1>Hey, I'm Vitor.</h1>
       <StaticImage
         className={aboutVitorPic}
-        alt="Vitor, with a collared shirt, in a country setting, in his engagement day, in a smiling at you"
+        alt="Vitor, with a collared shirt, in a country setting, in his engagement day, smiling at you"
         src="../images/vitor-profile-square.jpg"
       />
       <p>
@@ -36,7 +36,7 @@ const AboutPage = () => {
       </p>
       <p>
         The type of content you will find here is mainly made of{" "}
-        <Link to="/blog">
+        <Link to="/journal">
           quick actionable lessons from the small business trenches
         </Link>
         , since that's where I spend most of my time.
