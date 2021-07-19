@@ -29,10 +29,10 @@ const AboutPage = () => {
       </p>
       <p>
         Recently, I'm specialising in{" "}
-        <Link to="/services">
-          building high-converting, lightning-fast websites
-        </Link>{" "}
-        for businesses that need to generate online growth and credibility.
+        <a href="https://www.meetsbam.com/">
+          building high-converting websites
+        </a>{" "}
+        that solve real business problems.
       </p>
       <p>
         The type of content you will find here is mainly made of{" "}
@@ -43,16 +43,16 @@ const AboutPage = () => {
       </p>
       <p>
         If you’re into that, I'm setting up a newsletter in the next few days so
-        can let you know when I drop the next piece.
+        I can let you know when I drop the next piece.
       </p>
       <p>
-        And if you wanna know more, I will also start publishing what I’m up to
-        and the projects I’m involved with.
+        I'm also learning about blockchain & crypto and will soon start tracking
+        my journey on that area as well.
       </p>
       <p>
-        For personal stuff, you can reach out to me on{" "}
-        <Link to="https://twitter.com/itsvitoracacio">Twitter</Link>. Now, if
-        you wanna talk business, it's best to email me at{" "}
+        To get in touch, you can reach out to me on{" "}
+        <Link to="https://twitter.com/itsvitoracacio">Twitter</Link> or send me
+        an email at{" "}
         <a href="mailto:vitor@vitoracacio.com">vitor@vitoracacio.com</a>.
       </p>
       <p>Thanks for dropping by!</p>
