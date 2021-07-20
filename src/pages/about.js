@@ -10,7 +10,7 @@ const AboutPage = () => {
     <Page>
       <Metadata
         title="About"
-        description="About page for Vitor Acacio. I'm an international marketing professional building my own business and learning about blockchain & crypto."
+        description="About page for Vitor Acacio. I'm an international online business professional building my own business and learning about blockchain & crypto."
       />
       <h1>Hey, I'm Vitor.</h1>
       <StaticImage
@@ -19,8 +19,7 @@ const AboutPage = () => {
         src="../images/vitor-profile-square.jpg"
       />
       <p>
-        I’m an international marketing consultant to small businesses that sell
-        products and services online.
+        I'm an online business consultant to SMEs worldwide, specialising in marketing and systems automation.
       </p>
       <p>
         In the last five years, I've helped companies{" "}
@@ -28,11 +27,11 @@ const AboutPage = () => {
         hands-on implementation and through advisory & training.
       </p>
       <p>
-        Recently, I'm specialising in{" "}
+        Recently, I'm launching a business {" "}
         <a href="https://www.meetsbam.com/">
-          building high-converting websites
+          that builds high-converting websites
         </a>{" "}
-        that solve real business problems.
+        to solve real business problems.
       </p>
       <p>
         The type of content you will find here is mainly made of{" "}

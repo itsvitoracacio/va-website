@@ -11,7 +11,7 @@ const ServicesPage = () => {
     <Lander>
       <Metadata
         title="Services"
-        description="Vitor Acacio is an international marketing consultant specialising in building high-converting, lightning-fast websites"
+        description="Vitor Acacio is an online business consultant to SMEs worldwide, specialising in marketing and systems automation."
       />
       <section>
         <div className={sectionInner}>
