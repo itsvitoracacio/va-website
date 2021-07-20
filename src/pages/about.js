@@ -10,7 +10,7 @@ const AboutPage = () => {
     <Page>
       <Metadata
         title="About"
-        description="About page for Vitor Acacio. I'm an international online business professional building my own business and learning about blockchain & crypto."
+        description="About page for Vitor Acacio. I'm an international online business consultant building my own business and learning about blockchain & crypto."
       />
       <h1>Hey, I'm Vitor.</h1>
       <StaticImage

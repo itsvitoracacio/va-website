@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.vitoracacio.com",
-    title: "Vitor Acacio - SMEs Marketer Discovers Cryptocurrency",
+    title: "Vitor Acacio - Online Business Builder Discovers Cryptocurrency",
     description:
-      "I’m an international marketing professional building my own business and learning about blockchain & crypto.",
+      "I'm an international online business consultant building my own business and learning about blockchain & crypto.",
     author: "itsvitoracacio",
   },
   plugins: [
