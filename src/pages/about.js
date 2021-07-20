@@ -19,7 +19,8 @@ const AboutPage = () => {
         src="../images/vitor-profile-square.jpg"
       />
       <p>
-        I'm an online business consultant to SMEs worldwide, specialising in marketing and systems automation.
+        I'm an online business consultant to SMBs worldwide, specialising in
+        marketing and systems automation.
       </p>
       <p>
         In the last five years, I've helped companies{" "}
@@ -27,7 +28,7 @@ const AboutPage = () => {
         hands-on implementation and through advisory & training.
       </p>
       <p>
-        Recently, I'm launching a business {" "}
+        Recently, I'm launching a business{" "}
         <a href="https://www.meetsbam.com/">
           that builds high-converting websites
         </a>{" "}
