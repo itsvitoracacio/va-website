@@ -19,17 +19,19 @@ const AboutPage = () => {
         src="../images/vitor-profile-square.jpg"
       />
       <p>
-        I'm an online business consultant to SMBs worldwide, specialising in
-        marketing and systems automation.
+      I'm an online business consultant to SMBs worldwide, specialising in <span class="yellow-u">marketing and systems automation</span>.
       </p>
       <p>
-        In the last five years, I've helped companies{" "}
+        The 3 types of businesses I usually work with are online service providers, online course creators, and eCommerce stores.
+      </p>
+      <p>
+        Over the past five years, I've helped companies{" "}
         <mark>scale their online revenue and operations</mark> — both through
         hands-on implementation and through advisory & training.
       </p>
       <p>
         Recently, I'm launching a business{" "}
-        <a href="https://www.meetsbam.com/">
+        <a href="/">
           that builds high-converting websites
         </a>{" "}
         to solve real business problems.
@@ -37,9 +39,9 @@ const AboutPage = () => {
       <p>
         The type of content you will find here is mainly made of{" "}
         <Link to="/journal">
-          quick actionable lessons from the small business trenches
+          quick, actionable lessons from the small business trenches
         </Link>
-        , since that's where I spend most of my time.
+        {" "}since that's where I spend most of my time.
       </p>
       <p>
         If you’re into that, I'm setting up a newsletter in the next few days so
@@ -47,7 +49,7 @@ const AboutPage = () => {
       </p>
       <p>
         I'm also learning about blockchain & crypto and will soon start tracking
-        my journey on that area as well.
+        my journey in that area as well.
       </p>
       <p>
         To get in touch, you can reach out to me on{" "}
