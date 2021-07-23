@@ -1,5 +1,5 @@
 ---
-title: "How to choose a business idea when you need to make money fast"
+title: "How to choose a business idea when you need to get clients fast"
 date: "2021-07-07"
 permalink: "business-idea"
 tag: "business-building"

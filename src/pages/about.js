@@ -22,7 +22,7 @@ const AboutPage = () => {
       I'm an online business consultant to SMBs worldwide, specialising in <span class="yellow-u">marketing</span> and <span class="yellow-u">systems automation</span>.
       </p>
       <p>
-        The 3 types of businesses I usually work with are online service providers, online course creators, and eCommerce stores.
+        The 3 types of businesses I usually work with are service providers of all sorts, course creators, and eCommerce stores.
       </p>
       <p>
         Over the past five years, I've helped companies{" "}
