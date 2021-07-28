@@ -19,7 +19,7 @@ const AboutPage = () => {
         src="../images/vitor-profile-square.jpg"
       />
       <p>
-      I'm an online business consultant to SMBs worldwide, specialising in <span class="yellow-u">marketing</span> and <span class="yellow-u">online operations</span>.
+      I'm an online business consultant to SMBs worldwide, specialising in <span class="yellow-u">marketing</span> and <span class="yellow-u">digital operations</span>.
       </p>
       <p>
         The 3 types of businesses I usually work with are service providers of all sorts, course creators, and eCommerce stores.
