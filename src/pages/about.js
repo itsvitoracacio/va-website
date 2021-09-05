@@ -33,7 +33,7 @@ const AboutPage = () => {
         Recently, I'm launching my own consulting practice to {" "}
         <a href="/">
           help established SMBs build their own digital expertise by creating or training in-house and remote teams
-        </a>{" "}
+        </a>
         .
       </p>
       <p>
