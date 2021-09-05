@@ -10,7 +10,7 @@ const AboutPage = () => {
     <Page>
       <Metadata
         title="About"
-        description="About page for Vitor Acacio. I'm an international online business consultant building my own business and learning about blockchain & crypto."
+        description="About page for Vitor Acacio. I'm an international online business consultant building my own practice and documenting it."
       />
       <h1>Hey, I'm Vitor.</h1>
       <StaticImage
@@ -30,11 +30,11 @@ const AboutPage = () => {
         hands-on implementation and through advisory & training.
       </p>
       <p>
-        Recently, I'm launching a business{" "}
+        Recently, I'm launching my own consulting practice to {" "}
         <a href="/">
-          that builds high-converting websites
+          help established SMBs build their own digital expertise by creating or training in-house and remote teams
         </a>{" "}
-        to solve real business problems.
+        .
       </p>
       <p>
         The type of content you will find here is mainly made of{" "}
@@ -46,10 +46,6 @@ const AboutPage = () => {
       <p>
         If you’re into that, I'm setting up a newsletter in the next few days so
         I can let you know when I drop the next piece.
-      </p>
-      <p>
-        I'm also learning about blockchain & crypto and will soon start tracking
-        my journey in that area as well.
       </p>
       <p>
         To get in touch, you can reach out to me on{" "}
