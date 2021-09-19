@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.vitoracacio.com",
-    title: "Vitor Acacio - Digital Consultant & Online Business Builder",
+    title: "Vitor Acacio - Digital Business Consultant",
     description:
-      "I'm an international digital consultant building my own business and documenting it.",
+      "I'm an international digital business consultant building my own business and documenting it.",
     author: "itsvitoracacio",
   },
   plugins: [

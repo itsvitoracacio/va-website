@@ -10,7 +10,7 @@ const AboutPage = () => {
     <Page>
       <Metadata
         title="About"
-        description="About page for Vitor Acacio. I'm an international online business consultant building my own practice and documenting it."
+        description="About page for Vitor Acacio. I'm an international digital business consultant building my own practice and documenting it."
       />
       <h1>Hey, I'm Vitor.</h1>
       <StaticImage
@@ -19,7 +19,7 @@ const AboutPage = () => {
         src="../images/vitor-profile-square.jpg"
       />
       <p>
-      I'm an online business consultant to SMBs worldwide, specialising in <span class="yellow-u">marketing</span> and <span class="yellow-u">digital operations</span>.
+      I'm an digital business consultant to SMBs worldwide, specialising in <span class="yellow-u">marketing</span> and <span class="yellow-u">digital operations</span>.
       </p>
       <p>
         The 3 types of businesses I usually work with are service providers of all sorts, course creators, and eCommerce stores.
