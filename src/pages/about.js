@@ -31,7 +31,7 @@ const AboutPage = () => {
       <p>
         Recently, I'm launching my own business to {" "}
         <a href="/">
-          help small business owners have access to top-notch websites that get consistent results for their businesses at an affordable rate
+          build and manage websites that get consistent results for small businesses at an affordable rate
         </a>
         .
       </p>
