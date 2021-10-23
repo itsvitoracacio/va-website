@@ -19,20 +19,19 @@ const AboutPage = () => {
         src="../images/vitor-profile-square.jpg"
       />
       <p>
-      I'm an digital business consultant to SMBs worldwide, specialising in <span class="yellow-u">marketing</span> and <span class="yellow-u">digital operations</span>.
+      I'm a digital business consultant to SMBs worldwide, specialising in <span class="yellow-u">marketing</span> and <span class="yellow-u">digital operations</span>.
       </p>
       <p>
         The 3 types of businesses I usually work with are service providers of all sorts, course creators, and eCommerce stores.
       </p>
       <p>
         Over the past five years, I've helped companies{" "}
-        <mark>scale their online revenue and operations</mark> — both through
-        hands-on implementation and through advisory & training.
+        <span class="yellow-u">scale their online revenue and operations</span> — both through hands-on implementation and through advisory & training.
       </p>
       <p>
-        Recently, I'm launching my own consulting practice to {" "}
+        Recently, I'm launching my own business to {" "}
         <a href="/">
-          help established SMBs build their own digital expertise by creating or training in-house and remote teams
+          help small business owners have access to top-notch websites that get consistent results for their businesses at an affordable rate
         </a>
         .
       </p>
@@ -49,7 +48,7 @@ const AboutPage = () => {
       </p>
       <p>
         To get in touch, you can reach out to me on{" "}
-        <Link to="https://twitter.com/itsvitoracacio">Twitter</Link> or send me
+        <Link to="https://twitter.com/itsvitoracacio">twitter</Link> or send me
         an email at{" "}
         <a href="mailto:vitor@vitoracacio.com">vitor@vitoracacio.com</a>.
       </p>
