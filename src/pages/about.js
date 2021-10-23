@@ -19,14 +19,14 @@ const AboutPage = () => {
         src="../images/vitor-profile-square.jpg"
       />
       <p>
-      I'm a digital business consultant to SMBs worldwide, specialising in <span class="yellow-u">marketing</span> and <span class="yellow-u">digital operations</span>.
+      I'm a digital business consultant to SMBs worldwide, specialising in <mark >marketing</mark> and <mark>digital operations</mark>.
       </p>
       <p>
         The 3 types of businesses I usually work with are service providers of all sorts, course creators, and eCommerce stores.
       </p>
       <p>
         Over the past five years, I've helped companies{" "}
-        <span class="yellow-u">scale their online revenue and operations</span> — both through hands-on implementation and through advisory & training.
+        <mark>scale their online revenue and operations</mark> — both through hands-on implementation and through advisory & training.
       </p>
       <p>
         Recently, I'm launching my own business to {" "}
