@@ -10,7 +10,7 @@ const AboutPage = () => {
     <Page>
       <Metadata
         title="About"
-        description="About page for Vitor Acacio. I'm an international digital business consultant building my own practice and documenting it."
+        description="About page for Vitor Acacio. I'm an international digital strategist building my own practice and documenting it."
       />
       <h1>Hey, I'm Vitor.</h1>
       <StaticImage
@@ -22,14 +22,14 @@ const AboutPage = () => {
       I'm a digital business consultant to SMBs worldwide, specialising in <span className="yellow-u" >marketing</span> and <span className="yellow-u">digital operations</span>.
       </p>
       <p>
-        The 3 types of businesses I usually work with are service providers of all sorts, course creators, and eCommerce stores.
+        The 3 types of businesses I usually work with are service providers, course creators, and eCommerce stores.
       </p>
       <p>
         Over the past five years, I've helped companies{" "}
         <span className="yellow-u">scale their online revenue and operations</span> — both through hands-on implementation and through advisory & training.
       </p>
       <p>
-        Recently, I'm launching my own business to {" "}
+        Recently, I'm launching my own freelance practice to {" "}
         <a href="/">
           build and manage websites that get consistent results for small businesses at an affordable rate
         </a>
@@ -41,10 +41,6 @@ const AboutPage = () => {
           quick, actionable lessons from the small business trenches
         </Link>
         {" "}since that's where I spend most of my time.
-      </p>
-      <p>
-        If you’re into that, I'm setting up a newsletter in the next few days so
-        I can let you know when I drop the next piece.
       </p>
       <p>
         To get in touch, you can reach out to me on{" "}
